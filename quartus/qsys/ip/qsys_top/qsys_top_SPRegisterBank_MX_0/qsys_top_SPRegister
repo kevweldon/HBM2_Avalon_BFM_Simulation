@@ -1,0 +1,146 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 512 520)
+	(text "qsys_top_SPRegisterBank_MX_0" (rect 132 -1 272 11)(font "Dialog" (font_size 12)))
+	(text "inst" (rect 8 504 20 516)(font "Arial" ))
+	(port
+		(pt 0 80)
+		(input)
+		(text "avs_address[4..0]" (rect 0 0 74 12)(font "Dialog" (font_size 9)))
+		(text "avs_address[4..0]" (rect 4 72 106 85)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "avs_chipselect" (rect 0 0 59 12)(font "Dialog" (font_size 9)))
+		(text "avs_chipselect" (rect 4 100 88 113)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "avs_read_n" (rect 0 0 49 12)(font "Dialog" (font_size 9)))
+		(text "avs_read_n" (rect 4 128 64 141)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "avs_write_n" (rect 0 0 49 12)(font "Dialog" (font_size 9)))
+		(text "avs_write_n" (rect 4 184 70 197)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "avs_writedata[31..0]" (rect 0 0 79 12)(font "Dialog" (font_size 9)))
+		(text "avs_writedata[31..0]" (rect 4 212 124 225)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 280)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Dialog" (font_size 9)))
+		(text "clk" (rect 4 268 22 281)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 360)
+		(input)
+		(text "coe_fpgaRegWrS" (rect 0 0 75 12)(font "Dialog" (font_size 9)))
+		(text "coe_fpgaRegWrS" (rect 4 352 88 365)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 392)
+		(input)
+		(text "coe_fpgaRegBuildHash[31..0]" (rect 0 0 118 12)(font "Dialog" (font_size 9)))
+		(text "coe_fpgaRegBuildHash[31..0]" (rect 4 380 166 393)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "coe_fpgaRegBuildTime[31..0]" (rect 0 0 116 12)(font "Dialog" (font_size 9)))
+		(text "coe_fpgaRegBuildTime[31..0]" (rect 4 408 166 421)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 472)
+		(input)
+		(text "reset_n" (rect 0 0 30 12)(font "Dialog" (font_size 9)))
+		(text "reset_n" (rect 4 464 46 477)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "avs_readdata[31..0]" (rect 0 0 79 12)(font "Dialog" (font_size 9)))
+		(text "avs_readdata[31..0]" (rect 4 156 118 169)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 336)
+		(output)
+		(text "coe_fpgaRegRdS[16..0]" (rect 0 0 97 12)(font "Dialog" (font_size 9)))
+		(text "coe_fpgaRegRdS[16..0]" (rect 4 324 130 337)(font "Dialog" (font_size 9)))
+	)
+	(drawing
+		(text "avalon_slave_0" (rect 101 52 286 118)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "address" (rect 195 80 432 171)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "chipselect" (rect 195 108 450 227)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "read_n" (rect 195 136 426 283)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "readdata" (rect 195 164 438 339)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "write_n" (rect 195 192 432 395)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "writedata" (rect 195 220 444 451)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "clock" (rect 160 248 350 510)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "clk" (rect 195 276 408 563)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "conduit_end_0" (rect 105 304 288 622)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "coe_fpgaregrds" (rect 195 332 474 675)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "coe_fpgaregwrs" (rect 195 360 474 731)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "coe_fpgaregbuildhash" (rect 195 388 510 787)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "coe_fpgaregbuildtime" (rect 195 416 510 843)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "reset" (rect 161 444 352 902)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "reset_n" (rect 195 472 432 955)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text " qsys_top_SPRegisterBank_MX_0 " (rect 345 506 870 1023)(font "Dialog" (font_size 8)))
+		(line (pt 190 38)(pt 323 38)(line_width 1))
+		(line (pt 323 38)(pt 323 505)(line_width 1))
+		(line (pt 190 505)(pt 323 505)(line_width 1))
+		(line (pt 190 38)(pt 190 505)(line_width 1))
+		(line (pt 0 85)(pt 190 85)(line_width 3))
+		(line (pt 0 113)(pt 190 113)(line_width 1))
+		(line (pt 0 141)(pt 190 141)(line_width 1))
+		(line (pt 0 169)(pt 190 169)(line_width 3))
+		(line (pt 0 197)(pt 190 197)(line_width 1))
+		(line (pt 0 225)(pt 190 225)(line_width 3))
+		(line (pt 191 62)(pt 191 229)(line_width 1))
+		(line (pt 192 62)(pt 192 229)(line_width 1))
+		(line (pt 0 281)(pt 190 281)(line_width 1))
+		(line (pt 191 258)(pt 191 285)(line_width 1))
+		(line (pt 192 258)(pt 192 285)(line_width 1))
+		(line (pt 0 337)(pt 190 337)(line_width 3))
+		(line (pt 0 365)(pt 190 365)(line_width 1))
+		(line (pt 0 393)(pt 190 393)(line_width 3))
+		(line (pt 0 421)(pt 190 421)(line_width 3))
+		(line (pt 191 314)(pt 191 425)(line_width 1))
+		(line (pt 192 314)(pt 192 425)(line_width 1))
+		(line (pt 0 477)(pt 190 477)(line_width 1))
+		(line (pt 191 454)(pt 191 481)(line_width 1))
+		(line (pt 192 454)(pt 192 481)(line_width 1))
+		(line (pt 0 0)(pt 513 0)(line_width 1))
+		(line (pt 513 0)(pt 513 524)(line_width 1))
+		(line (pt 0 524)(pt 513 524)(line_width 1))
+		(line (pt 0 0)(pt 0 524)(line_width 1))
+	)
+)

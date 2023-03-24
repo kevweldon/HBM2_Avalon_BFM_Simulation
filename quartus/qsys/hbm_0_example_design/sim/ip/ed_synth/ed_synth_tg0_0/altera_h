@@ -1,0 +1,438 @@
+// (C) 2001-2022 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
+// software and tools, and its AMPP partner logic functions, and any output 
+// files from any of the foregoing (including device programming or simulation 
+// files), and any associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
+// license agreement, including, without limitation, that your use is for the 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Top-level wrapper of HBM Avl Traffic Generator.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+`define _get_pnf_id(_prefix, _i)  (  (((_i)==0) ? `"_prefix``0`" : \
+                                     (((_i)==1) ? `"_prefix``1`" : \
+                                     (((_i)==2) ? `"_prefix``2`" : \
+                                     (((_i)==3) ? `"_prefix``3`" : \
+                                     (((_i)==4) ? `"_prefix``4`" : \
+                                     (((_i)==5) ? `"_prefix``5`" : \
+                                     (((_i)==6) ? `"_prefix``6`" : \
+                                     (((_i)==7) ? `"_prefix``7`" : `"_prefix``8`")))))))))
+
+module altera_hbm_tg_avl_top # (
+   parameter PROTOCOL_ENUM                           = "",
+   parameter MEGAFUNC_DEVICE_FAMILY                  = "",
+
+   // Use simplified driver
+   parameter USE_SIMPLE_TG                           = 0,
+
+   // Specifies how many tests to run. Only applicable when USE_SIMPLE_TG is 0.
+   // SHORT -> Suitable for simulation only.
+   // MEDIUM -> Generates more traffic for simple hardware testing in seconds.
+   // INFINITE -> Generates traffic continuously and indefinitely.
+   parameter TEST_DURATION                           = "SHORT",
+
+   // Avalon protocol used by the controller
+   parameter CTRL_AVL_PROTOCOL_ENUM                  = "",
+
+   // Indicates whether Avalon byte-enable signal is used
+   parameter USE_AVL_BYTEEN                          = 1,
+
+   // Specifies alignment criteria for Avalon-MM word addresses and burst count
+   parameter AMM_WORD_ADDRESS_DIVISIBLE_BY           = 1,
+   parameter AMM_BURST_COUNT_DIVISIBLE_BY            = 1,
+
+   // The traffic generator is an Avalon master, and therefore generates symbol-
+   // addresses that are word-aligned when the protocol specified is Avalon-MM.
+   // To generate word-aligned addresses it must know the word address width.
+   parameter AMM_WORD_ADDRESS_WIDTH                  = 1,
+
+   // Definition of port widths for "ctrl_amm" interface (auto-generated)
+   parameter PORT_CTRL_AMM_RDATA_WIDTH               = 1,
+   parameter PORT_CTRL_AMM_ADDRESS_WIDTH             = 1,
+   parameter PORT_CTRL_AMM_WDATA_WIDTH               = 1,
+   parameter PORT_CTRL_AMM_BCOUNT_WIDTH              = 1,
+   parameter PORT_CTRL_AMM_BYTEEN_WIDTH              = 1,
+
+   // Definition of port widths for "ctrl_user_refresh" interface
+   parameter PORT_CTRL_USER_REFRESH_REQ_WIDTH        = 1,
+   parameter PORT_CTRL_USER_REFRESH_BANK_WIDTH       = 1,
+
+   // Definition of port widths for "ctrl_self_refresh" interface
+   parameter PORT_CTRL_SELF_REFRESH_REQ_WIDTH        = 1,
+
+   // Needed to determine address map
+   parameter USE_HARD_CTRL                           = 1,
+
+   // Indicates whether MMR(APB) feature is used
+   parameter USE_MMR_EN                              = 0,
+
+   // Indicates whether MMR(APB) is connected
+   parameter MMR_LINK                                = 0,
+
+   // Indicates whether diag write parity feature is used
+   parameter DIAG_WR_PAR                             = 0,
+
+   // Indicates whether diag read parity feature is used
+   parameter DIAG_RD_PAR                             = 0,
+
+   // Indicates whether diag single bit error correction is used
+   parameter DIAG_SBE_CORRECT                        = 0,
+
+   // User refresh 
+   parameter CORE_CLK_FREQ_MHZ                       = 200,
+   parameter USER_RFSH_ALL_EN                        = 0,
+      
+   // Definition of port widths for "ctrl_mmr" interface
+   parameter PORT_CTRL_MMR_MASTER_ADDRESS_WIDTH      = 1,
+   parameter PORT_CTRL_MMR_MASTER_RDATA_WIDTH        = 1,
+   parameter PORT_CTRL_MMR_MASTER_WDATA_WIDTH        = 1,
+   parameter PORT_CTRL_MMR_MASTER_BCOUNT_WIDTH       = 1,
+   parameter PORT_APB_PADDR_WIDTH                    = 10,
+   parameter PORT_APB_PWDATA_WIDTH                   = 32,
+   parameter PORT_APB_PSTRB_WIDTH                    = 4,
+   parameter PORT_APB_PRDATA_WIDTH                   = 32,   
+   parameter DIAG_DEBUG_ISSPS                        = 0
+
+) (
+   // User reset
+   input  logic                                               wmcrst_n_in,
+
+   // User clock
+   input  logic                                               wmc_clk_in,
+
+   // Chip Initialization done
+   input  logic                                               ninit_done,
+
+   // Ports for "ctrl_amm" interfaces (auto-generated)
+   output logic                                               amm_write,
+   output logic                                               amm_read,
+   input  logic                                               amm_ready,
+   input  logic [PORT_CTRL_AMM_RDATA_WIDTH-1:0]               amm_readdata,
+   output logic [PORT_CTRL_AMM_ADDRESS_WIDTH-1:0]             amm_address,
+   output logic [PORT_CTRL_AMM_WDATA_WIDTH-1:0]               amm_writedata,
+   output logic [PORT_CTRL_AMM_BCOUNT_WIDTH-1:0]              amm_burstcount,
+   output logic [PORT_CTRL_AMM_BYTEEN_WIDTH-1:0]              amm_byteenable,
+   input  logic                                               amm_readdatavalid,
+
+   // Ports for "ctrl_user_priority" interface
+   output logic                                               ctrl_user_priority_hi,
+
+   // Ports for "ctrl_auto_precharge" interface
+   output logic                                               ctrl_auto_precharge_req,
+
+   // Ports for "ctrl_ecc_interrupt" interface
+   input  logic                                               ctrl_ecc_user_interrupt,
+
+   // Ports for "ctrl_ecc_readdataerror" interface
+   input  logic                                               ctrl_ecc_readdataerror,
+
+   // Ports for "ctrl_mmr" interface
+   input  logic                                               mmr_master_waitrequest,
+   output logic                                               mmr_master_read,
+   output logic                                               mmr_master_write,
+   output logic [PORT_CTRL_MMR_MASTER_ADDRESS_WIDTH-1:0]      mmr_master_address,
+   input  logic [PORT_CTRL_MMR_MASTER_RDATA_WIDTH-1:0]        mmr_master_readdata,
+   output logic [PORT_CTRL_MMR_MASTER_WDATA_WIDTH-1:0]        mmr_master_writedata,
+   output logic [PORT_CTRL_MMR_MASTER_BCOUNT_WIDTH-1:0]       mmr_master_burstcount,
+   output logic                                               mmr_master_beginbursttransfer,
+   input  logic                                               mmr_master_readdatavalid,
+
+   //Ports for MMR Register Interface (APB)
+   output logic [PORT_APB_PADDR_WIDTH-1:0]                    ur_paddr,
+   output logic                                               ur_psel,
+   output logic                                               ur_penable,
+   output logic                                               ur_pwrite,
+   output logic [PORT_APB_PWDATA_WIDTH-1:0]                   ur_pwdata,
+   output logic [PORT_APB_PSTRB_WIDTH-1:0]                    ur_pstrb,
+   input  logic                                               ur_prready,
+   input  logic [PORT_APB_PRDATA_WIDTH-1:0]                   ur_prdata,
+   
+   // Ports for "tg_status" interfaces (auto-generated)
+   output logic                                               traffic_gen_pass,
+   output logic                                               traffic_gen_fail,
+   output logic                                               traffic_gen_timeout
+);
+   timeunit 1ns;
+   timeprecision 1ps;
+
+   logic [PORT_CTRL_AMM_WDATA_WIDTH-1:0]         pnf_per_bit_persist;
+
+   // WORM mode: If a data mismatch is encountered, stop as much of the traffic as possible
+   // and issue a read to the same address. In this mode, the persistent PNF
+   // is no longer meaningful as we basically stop at the first data mismatch.
+   logic                                         issp_worm_en;
+   logic [2:0]                                   worm_en;
+   logic                                         issp_reset_n;
+   logic                                         reset_n_pre_sync;
+   logic                                         reset_n_int;
+
+   // Reset from the wmcrst_n port
+   assign reset_n_pre_sync = wmcrst_n_in & issp_reset_n & ~ninit_done;
+   
+   // Create synchronized versions of the resets
+   altera_hbm_tg_avl_reset_sync # (
+      .NUM_RESET_OUTPUT (1)
+   ) reset_sync_inst (
+      .reset_n      (reset_n_pre_sync),
+      .clk          (wmc_clk_in),
+      .reset_n_sync (reset_n_int)
+   );
+   
+   localparam NUM_OF_WRITE_CTRL_PORTS = 1;
+`ifdef ALTERA_EMIF_ENABLE_ISSP
+   localparam MAX_PROBE_WIDTH = 511;
+   localparam TTL_PNF_WIDTH = PORT_CTRL_AMM_WDATA_WIDTH;
+
+   generate
+      if(DIAG_DEBUG_ISSPS) begin
+         altsource_probe #(
+            .sld_auto_instance_index ("YES"),
+            .sld_instance_index      (0),
+            .instance_id             ("WORM"),
+            .probe_width             (0),
+            .source_width            (1),
+            .source_initial_value    ("0"),
+            .enable_metastability    ("NO")
+         ) tg_worm_en_issp (
+            .source  (issp_worm_en)
+         );
+      end else begin
+         assign issp_worm_en = 1'b0;
+      end
+   endgenerate
+/*
+   altsource_probe #(
+      .sld_auto_instance_index ("YES"),
+      .sld_instance_index      (0),
+      .instance_id             ("TGP"),
+      .probe_width             (1),
+      .source_width            (0),
+      .source_initial_value    ("0"),
+      .enable_metastability    ("NO")
+   ) tg_pass (
+      .probe  (traffic_gen_pass)
+   );
+
+   altsource_probe #(
+      .sld_auto_instance_index ("YES"),
+      .sld_instance_index      (0),
+      .instance_id             ("TGF"),
+      .probe_width             (1),
+      .source_width            (0),
+      .source_initial_value    ("0"),
+      .enable_metastability    ("NO")
+   ) tg_fail (
+      .probe  (traffic_gen_fail)
+   );
+
+   altsource_probe #(
+      .sld_auto_instance_index ("YES"),
+      .sld_instance_index      (0),
+      .instance_id             ("TGT"),
+      .probe_width             (1),
+      .source_width            (0),
+      .source_initial_value    ("0"),
+      .enable_metastability    ("NO")
+   ) tg_timeout (
+      .probe  (traffic_gen_timeout)
+   );
+*/
+   // This source is out of reset by default (for users who don't want to use this)
+   altsource_probe #(
+      .sld_auto_instance_index ("YES"),
+      .sld_instance_index      (0),
+      .instance_id             ("TGR"),
+      .probe_width             (0),
+      .source_width            (1),
+      .source_initial_value    ("1"),
+      .enable_metastability    ("NO")
+   ) tg_reset_n_issp (
+      .source  (issp_reset_n)
+   );
+
+   altsource_probe #(
+      .sld_auto_instance_index ("YES"),
+      .sld_instance_index      (0),
+      .instance_id             ("TGST"),
+      .probe_width             (3),
+      .source_width            (0),
+      .source_initial_value    ("0"),
+      .enable_metastability    ("NO")
+   ) tg_status (
+      .probe  ({traffic_gen_timeout, traffic_gen_fail, traffic_gen_pass})
+   );
+   
+   generate
+      genvar i;
+      if(DIAG_DEBUG_ISSPS) begin
+        for (i = 0; i < (TTL_PNF_WIDTH + MAX_PROBE_WIDTH - 1) / MAX_PROBE_WIDTH; i = i + 1)
+        begin : gen_pnf
+           altsource_probe #(
+              .sld_auto_instance_index ("YES"),
+              .sld_instance_index      (0),
+              .instance_id             (`_get_pnf_id(PNF, i)),
+              .probe_width             ((MAX_PROBE_WIDTH * (i+1)) > TTL_PNF_WIDTH ? TTL_PNF_WIDTH - (MAX_PROBE_WIDTH * i) : MAX_PROBE_WIDTH),
+              .source_width            (0),
+              .source_initial_value    ("0"),
+              .enable_metastability    ("NO")
+           ) tg_pnf (
+              .probe  (pnf_per_bit_persist[((MAX_PROBE_WIDTH * (i+1) - 1) < TTL_PNF_WIDTH-1 ? (MAX_PROBE_WIDTH * (i+1) - 1) : TTL_PNF_WIDTH-1) : (MAX_PROBE_WIDTH * i)])
+           );
+        end
+      end
+   endgenerate
+`else
+   assign issp_worm_en = 1'b0;
+   assign issp_reset_n = 1'b1;
+`endif
+
+   always_ff @(posedge wmc_clk_in)
+   begin
+      worm_en[2:0] <= {worm_en[1:0], issp_worm_en};
+   end
+
+   generate
+     if (USE_SIMPLE_TG) begin : gen_avl_mm_driver_simple
+        altera_hbm_tg_avl_driver_simple # (
+           .DEVICE_FAMILY                          (MEGAFUNC_DEVICE_FAMILY),
+           .PROTOCOL_ENUM                          (PROTOCOL_ENUM),
+           .TG_TEST_DURATION                       (TEST_DURATION),
+           .TG_AVL_ADDR_WIDTH                      (PORT_CTRL_AMM_ADDRESS_WIDTH),
+           .TG_AVL_WORD_ADDR_WIDTH                 (AMM_WORD_ADDRESS_WIDTH),
+           .TG_AVL_SIZE_WIDTH                      (PORT_CTRL_AMM_BCOUNT_WIDTH),
+           .TG_AVL_DATA_WIDTH                      (PORT_CTRL_AMM_WDATA_WIDTH),
+           .TG_AVL_BE_WIDTH                        (PORT_CTRL_AMM_BYTEEN_WIDTH),
+           .AMM_WORD_ADDRESS_DIVISIBLE_BY          (AMM_WORD_ADDRESS_DIVISIBLE_BY),
+           .AMM_BURST_COUNT_DIVISIBLE_BY           (AMM_WORD_ADDRESS_DIVISIBLE_BY)
+        ) traffic_gen_inst (
+           .clk                                    (wmc_clk_in),
+           .reset_n                                (reset_n_int),
+           .avl_ready                              (amm_ready),
+           .avl_write_req                          (amm_write),
+           .avl_read_req                           (amm_read),
+           .avl_addr                               (amm_address),
+           .avl_size                               (amm_burstcount),
+           .avl_be                                 (amm_byteenable),
+           .avl_wdata                              (amm_writedata),
+           .avl_rdata_valid                        (amm_readdatavalid),
+           .avl_rdata                              (amm_readdata),
+           .pass                                   (traffic_gen_pass),
+           .fail                                   (traffic_gen_fail),
+           .timeout                                (traffic_gen_timeout),
+           .pnf_per_bit                            (),
+           .pnf_per_bit_persist                    (pnf_per_bit_persist)
+        );
+	
+	assign ctrl_auto_precharge_req = 1'b0;
+        assign ur_paddr = '0;
+        assign ur_psel = '0;
+        assign ur_penable = '0;
+        assign ur_pwrite = '0;
+        assign ur_pwdata = '0;
+        assign ur_pstrb = '0;	
+	 	
+     end else begin : gen_avl_mm_driver_normal
+        altera_hbm_tg_avl_driver # (
+           .DEVICE_FAMILY                          (MEGAFUNC_DEVICE_FAMILY),
+           .PROTOCOL_ENUM                          (PROTOCOL_ENUM),
+           .TG_TEST_DURATION                       (TEST_DURATION),
+           .TG_AVL_ADDR_WIDTH                      (PORT_CTRL_AMM_ADDRESS_WIDTH),
+           .TG_AVL_WORD_ADDR_WIDTH                 (AMM_WORD_ADDRESS_WIDTH),
+           .TG_AVL_SIZE_WIDTH                      (PORT_CTRL_AMM_BCOUNT_WIDTH),
+           .TG_AVL_DATA_WIDTH                      (PORT_CTRL_AMM_WDATA_WIDTH),
+           .TG_AVL_BE_WIDTH                        (PORT_CTRL_AMM_BYTEEN_WIDTH),
+           .TG_RANDOM_BYTE_ENABLE                  (USE_AVL_BYTEEN),
+           .AMM_WORD_ADDRESS_DIVISIBLE_BY          (AMM_WORD_ADDRESS_DIVISIBLE_BY),
+           .AMM_BURST_COUNT_DIVISIBLE_BY           (AMM_WORD_ADDRESS_DIVISIBLE_BY),
+           .TG_ENABLE_UNIX_ID                      (0),
+           .TG_USE_UNIX_ID                         (0),
+	   .DIAG_DEBUG_ISSPS                       (DIAG_DEBUG_ISSPS)
+        ) traffic_gen_inst (
+           .clk                                    (wmc_clk_in),
+           .reset_n                                (reset_n_int),
+           .worm_en                                (worm_en[2]),
+           .avl_ready                              (amm_ready),
+           .avl_write_req                          (amm_write),
+           .avl_read_req                           (amm_read),
+           .avl_addr                               (amm_address),
+           .avl_size                               (amm_burstcount),
+           .avl_be                                 (amm_byteenable),
+           .avl_wdata                              (amm_writedata),
+           .avl_rdata_valid                        (amm_readdatavalid),
+           .avl_rdata                              (amm_readdata),
+           .avl_ready_w                            (1'b0), 
+           .avl_addr_w                             (),     
+           .avl_size_w                             (),     
+           .ctrl_ecc_user_interrupt                (ctrl_ecc_user_interrupt),
+           .ctrl_ecc_readdataerror                 (ctrl_ecc_readdataerror),
+           .pass                                   (traffic_gen_pass),
+           .fail                                   (traffic_gen_fail),
+           .timeout                                (traffic_gen_timeout),
+           .pnf_per_bit                            (),
+           .pnf_per_bit_persist                    (pnf_per_bit_persist),
+	   .ctrl_auto_precharge_req                (ctrl_auto_precharge_req)
+        );
+     
+        altera_hbm_tg_avl_mmr_test_stage #(
+           .USE_HARD_CTRL              (USE_HARD_CTRL),
+           .DIAG_RD_PAR                (DIAG_RD_PAR),
+           .DIAG_WR_PAR                (DIAG_WR_PAR),
+           .DIAG_SBE_CORRECT           (DIAG_SBE_CORRECT),
+           .PORT_APB_PADDR_WIDTH       (PORT_APB_PADDR_WIDTH),
+           .PORT_APB_PWDATA_WIDTH      (PORT_APB_PWDATA_WIDTH),
+           .PORT_APB_PSTRB_WIDTH       (PORT_APB_PSTRB_WIDTH),
+           .PORT_APB_PRDATA_WIDTH      (PORT_APB_PRDATA_WIDTH),
+	   .CORE_CLK_FREQ_MHZ          (CORE_CLK_FREQ_MHZ),
+	   .USER_RFSH_ALL_EN           (USER_RFSH_ALL_EN),
+	   .MMR_LINK                   (MMR_LINK)
+        )mmr_checker_inst(
+           .clk                        (wmc_clk_in),
+           .rst                        (~reset_n_int),
+           .enable                     (1'b0),
+           .fail                       (),
+           .done                       (),
+
+          //Ports for MMR Register Interface (APB)
+           .ur_paddr                   (ur_paddr),
+           .ur_psel                    (ur_psel) ,
+           .ur_penable                 (ur_penable) ,
+           .ur_pwrite                  (ur_pwrite),
+           .ur_pwdata                  (ur_pwdata) ,
+           .ur_pstrb                   (ur_pstrb) ,
+           .ur_prready                 (ur_prready) ,
+           .ur_prdata                  (ur_prdata)
+        );
+     end   
+   endgenerate
+
+   // Tie off side-band signals
+   // The example traffic generator doesn't exercise the side-band signals,
+   // but we tie them off via core registers to ensure we get somewhat
+   // realistic timing for these paths.
+   (* altera_attribute = {"-name MAX_FANOUT 1; -name ADV_NETLIST_OPT_ALLOWED ALWAYS_ALLOW"}*) logic core_zero_tieoff_r /* synthesis dont_merge syn_preserve = 1*/;
+   always_ff @(posedge wmc_clk_in)
+   begin
+      if (!reset_n_int) begin
+         core_zero_tieoff_r <= 1'b0;
+      end else begin
+         core_zero_tieoff_r <= 1'b0;
+      end
+   end
+
+   assign ctrl_user_priority_hi         = 1'b0;
+   assign mmr_master_read               = core_zero_tieoff_r;
+   assign mmr_master_write              = core_zero_tieoff_r;
+   assign mmr_master_address            = {PORT_CTRL_MMR_MASTER_ADDRESS_WIDTH{core_zero_tieoff_r}};
+   assign mmr_master_writedata          = {PORT_CTRL_MMR_MASTER_WDATA_WIDTH{core_zero_tieoff_r}};
+   assign mmr_master_burstcount         = {PORT_CTRL_MMR_MASTER_BCOUNT_WIDTH{core_zero_tieoff_r}};
+   assign mmr_master_beginbursttransfer = core_zero_tieoff_r;
+
+endmodule

@@ -1,0 +1,33 @@
+#!/bin/sh
+# Kevin Weldon - 2021
+# echo on
+set -x
+
+GENERATE_SIM_SCRIPTS=1
+RUN_MODELSIM=1
+
+PROJECT=hbm_sim
+REVISION=hbm_sim
+SIMULATION_DIRECTORY=sim
+SIM_SCRIPTS=./sim_scripts
+
+if [ $GENERATE_SIM_SCRIPTS == 1 ]
+then
+    # Generate simulation setup script for IP
+    cd ../quartus; ip-setup-simulation --quartus-project=$PROJECT --revision=$REVISION --output-directory=$SIM_SCRIPTS --compile-to-work --use-relative-paths; cd ../$SIMULATION_DIRECTORY;
+fi
+
+if [ $RUN_MODELSIM == 1 ]
+then
+    # Remove current wlf file
+    rm -f vsim.wlf
+    # Run simulation in ModelSim
+    vsim -c -do 'source buildall.tcl'
+    cp transcript sim_transcript
+    cat sim_transcript | grep top_tb:
+    vsim -gui -view vsim.wlf -do 'wave.do'
+    
+fi
+
+# echo off
+set +x

@@ -1,0 +1,53 @@
+//__ACDS_USER_COMMENT__ (C) 2001-2022 Intel Corporation. All rights reserved.
+//__ACDS_USER_COMMENT__ This simulation model contains highly confidential and
+//__ACDS_USER_COMMENT__ proprietary information of Intel and is being provided
+//__ACDS_USER_COMMENT__ in accordance with and subject to the protections of the
+//__ACDS_USER_COMMENT__ applicable Intel Program License Subscription Agreement
+//__ACDS_USER_COMMENT__ which governs its use and disclosure. Your use of Intel
+//__ACDS_USER_COMMENT__ Corporation's design tools, logic functions and other
+//__ACDS_USER_COMMENT__ software and tools, and its AMPP partner logic functions,
+//__ACDS_USER_COMMENT__ and any output files from any of the foregoing (including device
+//__ACDS_USER_COMMENT__ programming or simulation files), and any associated
+//__ACDS_USER_COMMENT__ documentation or information are expressly subject to the
+//__ACDS_USER_COMMENT__ terms and conditions of the Intel Program License Subscription
+//__ACDS_USER_COMMENT__ Agreement, Intel FPGA IP License Agreement, or other
+//__ACDS_USER_COMMENT__ applicable license agreement, including, without limitation,
+//__ACDS_USER_COMMENT__ that your use is for the sole purpose of simulating designs
+//__ACDS_USER_COMMENT__ for use exclusively in logic devices manufactured by Intel and sold
+//__ACDS_USER_COMMENT__ by Intel or its authorized distributors. Please refer to the
+//__ACDS_USER_COMMENT__ applicable agreement for further details. Intel products and
+//__ACDS_USER_COMMENT__ services are protected under numerous U.S. and foreign patents,
+//__ACDS_USER_COMMENT__ maskwork rights, copyrights and other intellectual property laws.
+//__ACDS_USER_COMMENT__ Intel assumes no responsibility or liability arising out of the
+//__ACDS_USER_COMMENT__ application or use of this simulation model.
+`pragma protect begin_protected
+`pragma protect version = 1
+`pragma protect encrypt_agent= "Aldec protectip", encrypt_agent_info= "Riviera-PRO 2019.10.138"
+`pragma protect data_method= "aes128-cbc"
+`pragma protect key_keyowner= "Aldec", key_keyname= "ALDEC15_001", key_method= "rsa"
+`pragma protect key_block encoding= (enctype="base64", line_length= 76, bytes= 256)
+tGzjtZ9VcaPLN+183++qlU42gODK+oh2bZVVgypTmYoBTcWAY2GVR64rgnuZUGuccKPbP7Igrq2g
+uu/1k3t/eYsS3FApYrQ5Ajs734CFBDzMtn1/2qvRqAU2acpVrfqPsWEAk3+qTcdCvNMedkI18kFc
+1fL2L9f6bRoPb2PmcDGT5k+dGHr+siX2Gtaja8DJFvKE3WTK+jz6Us2b2Kbs6t0aN0F+OYhxXDFS
+bGFVcV8oUvRvOc0TXTzZh2Tp9rzPLkFws4CQ2cfslP5Q7M7h5ikt5/A77EFznsVIdVKBh4U433WE
+QAw+GdzMpdJfPPG6jUhfYG7RbC3/7JkuUEblfg==
+`pragma protect data_keyowner= "altera", data_keyname= "altera"
+`pragma protect data_block encoding= (enctype="base64", line_length= 76, bytes= 928)
+GHjhiboUo6XRi4iZvtqspiT8kS8V4x/xoJgcAtFoxISb+WQQtdRsm2TGD9Ik5VFTEVAd+i8Dm2xT
+qjNopufJnlwidFpWJJlTvgftKilmiXlCdjNPF6N2n+1/CJ6rz2HK5Q2/PlkybwOGICGtB9hJPhrg
+wNoB7wGm+n+OpC7V7ewO1EQOnIBms5wIoVPMbmn6t9iOPeqA8m03TWGxh0zQjPe8qHFKYJv0QmOW
+/b8fryWrhYvJAW63yhLtPsY1X6zji6SGSDd+4SQeiKRdaL5ZEtpoosNNsqMQxSaanavVSkDJsbGI
+gdyIvT0DgtQPM49B88BxkhSBorR1lVUY8j0X0UiKrVSReak0MqXD2GBSSD596k3HHXBPKVN/zDyH
+/wkEDS42hMj2CjrR7MVVYXvDZicYThb5vr30Fed9kqHT73EyDMfv5amk+xAnUvzzXzhqsdgShXXS
+QKKwyj9lx56JjNfoqXvP2mt+DmkvkN/gqawOqN6xOWtmDL63HV/1DcvTTnV5VQ97hClxyxMQA3Og
+u/DiId5k0VzK+m0wn2HSmLr+eQZsy8BMHcwlYhaO5D2Xynrcad74OjmfU0L4spoyI/od7wrp8wC8
+FN2HxZyYFad3tnXs4anZQiCExDejDP222Yowf67N3dfdo8uhKe8NL/Y7O068OPRG+dcdg4JJvh1M
+HjXVyPdaCS3Ja1FT7San+uz/LvbO+kUwELsij6gVguZwqar4gOayKKwndNrjCmwv36MlmqofhwM6
+oPAX4HxROgJfl/zdXcxOfDfGQ/uQDnQLasz2t6FGQSno97lZqa8RYq4Edu9RAKITxxeeXfB3W4lT
+Fj+CqTjUzjfjUyDMqCc9mbOUknH4iM2e8ltY6rhLWn5ei2OyZmBjPsPKs51xbjQzE5t7OfNSUX4L
+MKIRtPsqKXf03vxDa+P4g2bHpIvdNgan4JZU+y5oe3MlaAMA1LjGk3+H32p4kuzsb82GTDdqP0UE
+uzx7OEeT38UmadfhewDkl94eTRcnWYp5gwi1mhY/SfKavWWR5qFCmM2RofaQLbGYwL+B5lnHaSNq
+KAaz8evSYFwclZH1aAMou4jkjuBlSNdxIjQ7SIhzB4n581DXz8ilwhgCZLpl6npd2hiIg+sgfafv
+wbVBb2cm4gTD7V2LT0OmovZhWZ2v1R4cki1K9F7EeBawPZdRjjIcbcasehkCN+D+QPwplYXWfCI6
+uVzsMmrn7LqkBvrJmKEukA==
+`pragma protect end_protected

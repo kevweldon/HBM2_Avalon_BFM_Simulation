@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_1931/sim/qsys_top_hbm_0_altera_iopll_1931_vubauri.vo"
+   type="VERILOG"
+   library="altera_iopll_1931" />
+ <file
+   path="altera_iopll_1931/sim/stratix10_altera_iopll.v"
+   type="VERILOG"
+   library="altera_iopll_1931" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_altera_iopll_191_oqrzszi.v"
+   type="VERILOG"
+   library="altera_abstract_uib_191"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_abstract_uib_191/sim/rtl/altera_hbm_arch_nd_pll_qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_seq_params_sim.hex"
+   type="HEX"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_seq_params_sim.txt"
+   type="OTHER"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_uibssm_sim.hex"
+   type="HEX"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_seq_params_synth.hex"
+   type="HEX"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_seq_params_synth.txt"
+   type="OTHER"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_uibssm_synth.hex"
+   type="HEX"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_top.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly_uibssm.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/qsys_top_hbm_0_altera_abstract_uib_191_g5e7tly.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_abstract_uib_191" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_reset_sync.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_reset_sync.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_reset_sync.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_reset_sync.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_clkbuf.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_clkbuf.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_clkbuf.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_clkbuf.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_reset_sequencer.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_reset_sequencer.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_reset_sequencer.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_reset_sequencer.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_reset_debounce.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_reset_debounce.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_reset_debounce.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_reset_debounce.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_two_one_mux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_two_one_mux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_two_one_mux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_two_one_mux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_two_one_obdatamux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_two_one_obdatamux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_two_one_obdatamux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_two_one_obdatamux.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_ecc_dbi_par.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_ecc_dbi_par.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_ecc_dbi_par.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_ecc_dbi_par.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_ecc.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_ecc.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_ecc.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_ecc.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_ecc_decoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_ecc_decoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_ecc_decoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_ecc_decoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_ecc_decoder_64_altecc_decoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_ecc_decoder_64_altecc_decoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_ecc_decoder_64_altecc_decoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_ecc_decoder_64_altecc_decoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_ecc_decoder_64_decode.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_ecc_decoder_64_decode.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_ecc_decoder_64_decode.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_ecc_decoder_64_decode.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_ecc_encoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_ecc_encoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_ecc_encoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_ecc_encoder_64.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_ecc_encoder_64_altecc_encoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_ecc_encoder_64_altecc_encoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_ecc_encoder_64_altecc_encoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_ecc_encoder_64_altecc_encoder.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_mp_reg.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_mp_reg.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_mp_reg.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_mp_reg.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_rx_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_rx_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_rx_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_rx_parity.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slice_rx_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slice_rx_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slice_rx_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slice_rx_parity_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slicedbi.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slicedbi.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slicedbi.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slicedbi.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slicedbi_comparator.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slicedbi_comparator.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slicedbi_comparator.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slicedbi_comparator.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_ub48slicedbi_lane.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_ub48slicedbi_lane.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_ub48slicedbi_lane.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_ub48slicedbi_lane.v"
+   type="VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_gpio_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_gpio_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_gpio_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_gpio_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_hbm.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_hbm.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_hbm.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_hbm.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_inph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_inph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_inph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_inph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_ms.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_nd4h_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_nd4h_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_nd4h_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_nd4h_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_outph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_outph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_outph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_outph_adpt.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_outph_adpt_lraj.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_outph_adpt_lraj.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_outph_adpt_lraj.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_outph_adpt_lraj.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_pdio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_pdio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_pdio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_pdio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_phase_mux.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_phase_mux.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_phase_mux.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_phase_mux.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_psio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_psio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_psio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_psio.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_phptr_ctrl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_phptr_ctrl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_phptr_ctrl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_phptr_ctrl.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_psio_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_psio_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_psio_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_psio_group.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_ptr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_ptr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_ptr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_ptr_gen.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_read_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_read_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_read_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_read_fifo.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_ub48.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_ub48.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_ub48.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_ub48.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_amm_1x_bridge.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_amm_1x_bridge.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_amm_1x_bridge.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_amm_1x_bridge.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_abstract_uib_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_abstract_uib_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_abstract_uib_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_abstract_uib_uib.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd4h_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd4h_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd4h_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd4h_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd4h_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd4h_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd4h_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd4h_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_buf_udir_se_i.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_buf_udir_se_i.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_buf_udir_se_i.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_buf_udir_se_i.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_bufs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_bufs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_bufs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_bufs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_buf_udir_se_o.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_buf_udir_se_o.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_buf_udir_se_o.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_buf_udir_se_o.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_hbmc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_hbmc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_hbmc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_hbmc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_cpa.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_cpa.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_cpa.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_cpa.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_pll_fast_sim.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_pll_fast_sim.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_pll_fast_sim.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_pll_fast_sim.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_ufi.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_arch_nd_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_arch_nd_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_arch_nd_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_arch_nd_uib_io_phy.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_abstract_uib_191/sim/mentor/altera_hbm_c2p_lcells.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="modelsim" />
+ <file
+   path="altera_abstract_uib_191/sim/aldec/altera_hbm_c2p_lcells.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="riviera" />
+ <file
+   path="altera_abstract_uib_191/sim/synopsys/altera_hbm_c2p_lcells.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_abstract_uib_191/sim/cadence/altera_hbm_c2p_lcells.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_abstract_uib_191"
+   simulator="ncsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/mentor/altera_avl_ufi_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="modelsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/aldec/altera_avl_ufi_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="riviera" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/synopsys/altera_avl_ufi_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/cadence/altera_avl_ufi_monitor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="ncsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/mentor/altera_avl_ufi_read_aligner.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="modelsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/aldec/altera_avl_ufi_read_aligner.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="riviera" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/synopsys/altera_avl_ufi_read_aligner.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/cadence/altera_avl_ufi_read_aligner.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="ncsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/mentor/altera_avl_ufi_soft_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="modelsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/aldec/altera_avl_ufi_soft_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="riviera" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/synopsys/altera_avl_ufi_soft_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/cadence/altera_avl_ufi_soft_logic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="ncsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/mentor/altera_avl_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="modelsim" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/aldec/altera_avl_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="riviera" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/synopsys/altera_avl_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="vcs, vcsmx" />
+ <file
+   path="altera_avl_ufi_adapter_2240/sim/cadence/altera_avl_ufi_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="altera_avl_ufi_adapter_2240"
+   simulator="ncsim" />
+ <file
+   path="altera_hbm_1961/sim/qsys_top_hbm_0_altera_hbm_1961_uzzthcq.v"
+   type="VERILOG"
+   library="altera_hbm_1961"
+   hasInlineConfiguration="true" />
+ <file
+   path="sim/qsys_top_hbm_0.v"
+   type="VERILOG"
+   library="qsys_top_hbm_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="qsys_top_hbm_0.qsys_top_hbm_0" />
+ <deviceFamily name="stratix10" />
+ <device name="1SM21CHU2F53E2VG" />
+</simPackage>
