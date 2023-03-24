@@ -1,0 +1,114 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 336 408)
+	(text "qsys_top_pio_0" (rect 114 -1 178 11)(font "Dialog" (font_size 12)))
+	(text "inst" (rect 8 392 20 404)(font "Arial" ))
+	(port
+		(pt 0 80)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Dialog" (font_size 9)))
+		(text "clk" (rect 4 72 22 85)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "reset_n" (rect 0 0 30 12)(font "Dialog" (font_size 9)))
+		(text "reset_n" (rect 4 128 46 141)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "address[2..0]" (rect 0 0 51 12)(font "Dialog" (font_size 9)))
+		(text "address[2..0]" (rect 4 184 82 197)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "write_n" (rect 0 0 28 12)(font "Dialog" (font_size 9)))
+		(text "write_n" (rect 4 212 46 225)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "writedata[31..0]" (rect 0 0 57 12)(font "Dialog" (font_size 9)))
+		(text "writedata[31..0]" (rect 4 240 100 253)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 280)
+		(input)
+		(text "chipselect" (rect 0 0 37 12)(font "Dialog" (font_size 9)))
+		(text "chipselect" (rect 4 268 64 281)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 304)
+		(output)
+		(text "readdata[31..0]" (rect 0 0 57 12)(font "Dialog" (font_size 9)))
+		(text "readdata[31..0]" (rect 4 296 94 309)(font "Dialog" (font_size 9)))
+	)
+	(port
+		(pt 0 360)
+		(output)
+		(text "out_port[7..0]" (rect 0 0 53 12)(font "Dialog" (font_size 9)))
+		(text "out_port[7..0]" (rect 4 352 88 365)(font "Dialog" (font_size 9)))
+	)
+	(drawing
+		(text "clk" (rect 117 52 252 118)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "clk" (rect 138 80 294 171)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "reset" (rect 104 108 238 230)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "reset_n" (rect 138 136 318 283)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "s1" (rect 122 164 256 342)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "address" (rect 138 192 318 395)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "write_n" (rect 138 220 318 451)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "writedata" (rect 138 248 330 507)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "chipselect" (rect 138 276 336 563)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "readdata" (rect 138 304 324 619)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text "external_connection" (rect 16 332 146 678)(font "Dialog" (color 128 0 0)(font_size 10)))
+		(text "export" (rect 138 360 312 731)(font "Dialog" (color 0 0 0)(font_size 8)))
+		(text " qsys_top_pio_0 " (rect 259 394 614 799)(font "Dialog" (font_size 8)))
+		(line (pt 133 38)(pt 209 38)(line_width 1))
+		(line (pt 209 38)(pt 209 393)(line_width 1))
+		(line (pt 133 393)(pt 209 393)(line_width 1))
+		(line (pt 133 38)(pt 133 393)(line_width 1))
+		(line (pt 0 85)(pt 133 85)(line_width 1))
+		(line (pt 134 62)(pt 134 89)(line_width 1))
+		(line (pt 135 62)(pt 135 89)(line_width 1))
+		(line (pt 0 141)(pt 133 141)(line_width 1))
+		(line (pt 134 118)(pt 134 145)(line_width 1))
+		(line (pt 135 118)(pt 135 145)(line_width 1))
+		(line (pt 0 197)(pt 133 197)(line_width 3))
+		(line (pt 0 225)(pt 133 225)(line_width 1))
+		(line (pt 0 253)(pt 133 253)(line_width 3))
+		(line (pt 0 281)(pt 133 281)(line_width 1))
+		(line (pt 0 309)(pt 133 309)(line_width 3))
+		(line (pt 134 174)(pt 134 313)(line_width 1))
+		(line (pt 135 174)(pt 135 313)(line_width 1))
+		(line (pt 0 365)(pt 133 365)(line_width 3))
+		(line (pt 134 342)(pt 134 369)(line_width 1))
+		(line (pt 135 342)(pt 135 369)(line_width 1))
+		(line (pt 0 0)(pt 342 0)(line_width 1))
+		(line (pt 342 0)(pt 342 412)(line_width 1))
+		(line (pt 0 412)(pt 342 412)(line_width 1))
+		(line (pt 0 0)(pt 0 412)(line_width 1))
+	)
+)

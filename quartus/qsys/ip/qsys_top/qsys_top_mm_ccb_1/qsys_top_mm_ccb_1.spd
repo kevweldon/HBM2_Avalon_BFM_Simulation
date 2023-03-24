@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="st_dc_fifo_1940/sim/qsys_top_mm_ccb_1_st_dc_fifo_1940_r4vdppy.v"
+   type="VERILOG"
+   library="st_dc_fifo_1940" />
+ <file
+   path="st_dc_fifo_1940/sim/altera_dcfifo_synchronizer_bundle.v"
+   type="VERILOG"
+   library="st_dc_fifo_1940" />
+ <file
+   path="st_dc_fifo_1940/sim/altera_std_synchronizer_nocut.v"
+   type="VERILOG"
+   library="st_dc_fifo_1940" />
+ <file
+   path="mm_ccb_1920/sim/qsys_top_mm_ccb_1_mm_ccb_st_dc_fifo_1920_622tdai.v"
+   type="VERILOG"
+   library="mm_ccb_1920"
+   hasInlineConfiguration="true" />
+ <file
+   path="mm_ccb_1920/sim/qsys_top_mm_ccb_1_mm_ccb_st_dc_fifo_1920_shimbei.v"
+   type="VERILOG"
+   library="mm_ccb_1920"
+   hasInlineConfiguration="true" />
+ <file
+   path="mm_ccb_1920/sim/qsys_top_mm_ccb_1_mm_ccb_1920_5p3ibgq.v"
+   type="VERILOG"
+   library="mm_ccb_1920" />
+ <file
+   path="sim/qsys_top_mm_ccb_1.v"
+   type="VERILOG"
+   library="qsys_top_mm_ccb_1"
+   hasInlineConfiguration="true" />
+ <topLevel name="qsys_top_mm_ccb_1.qsys_top_mm_ccb_1" />
+ <deviceFamily name="stratix10" />
+ <device name="1SM21CHU2F53E2VG" />
+</simPackage>
