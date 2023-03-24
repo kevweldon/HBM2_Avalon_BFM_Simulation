@@ -1,0 +1,21 @@
+
+WORK > DEFAULT
+DEFAULT:                           ./libraries/work/               
+work:                              ./libraries/work/               
+ed_sim:                            ./libraries/ed_sim/             
+altera_ver:                        ./libraries/altera_ver/         
+lpm_ver:                           ./libraries/lpm_ver/            
+sgate_ver:                         ./libraries/sgate_ver/          
+altera_mf_ver:                     ./libraries/altera_mf_ver/      
+altera_lnsim_ver:                  ./libraries/altera_lnsim_ver/   
+fourteennm_ver:                    ./libraries/fourteennm_ver/     
+fourteennm_hssi_ver:               ./libraries/fourteennm_hssi_ver/
+altera:                            ./libraries/altera/             
+lpm:                               ./libraries/lpm/                
+sgate:                             ./libraries/sgate/              
+altera_mf:                         ./libraries/altera_mf/          
+altera_lnsim:                      ./libraries/altera_lnsim/       
+fourteennm:                        ./libraries/fourteennm/         
+fourteennm_hssi:                   ./libraries/fourteennm_hssi/    
+OTHERS=_default_synopsys_sim.setup                                 
+LIBRARY_SCAN = TRUE

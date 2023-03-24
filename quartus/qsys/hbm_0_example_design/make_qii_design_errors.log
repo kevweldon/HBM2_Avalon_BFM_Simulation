@@ -1,0 +1,47 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 22.4.0 Build 94 12/07/2022 SC Pro Edition
+    Info: Copyright (C) 2022  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Wed Mar  8 08:34:52 2023
+    Info: System process ID: 21807
+Info: Command: quartus_sh -t /tmp/arc_694086162/alt9424_4077773134413491667.dir/0100_hbm_0_gen/make_qii_design.tcl
+Info:  
+Info: *************************************************************************
+Info: Altera HBM IP Example Design Builder
+Info:  
+Info: Type  : Quartus Prime Project
+Info: Family: Stratix 10
+Info: Device: 1SM21CHU2F53E2VG
+Info:  
+Info: This script takes ~1 minute to execute...
+Info: *************************************************************************
+Info:  
+Info: Generating example design files...
+Info: Creating Quartus Prime project...
+Info:  
+Info: *************************************************************************
+Info: Successfully generated example design at the following location:
+Info:  
+Info:    /tmp/arc_694086162/alt9424_4077773134413491667.dir/0100_hbm_0_gen/qii
+Info:  
+Info: *************************************************************************
+Info:  
+Info: Evaluation of Tcl script /tmp/arc_694086162/alt9424_4077773134413491667.dir/0100_hbm_0_gen/make_qii_design.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1164 megabytes
+    Info: Processing ended: Wed Mar  8 08:35:19 2023
+    Info: Elapsed time: 00:00:27
+    Info: System process ID: 21807

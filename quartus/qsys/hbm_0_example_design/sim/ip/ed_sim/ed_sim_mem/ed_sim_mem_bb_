@@ -1,0 +1,33 @@
+module ed_sim_mem (
+		input  wire         ck_t_0,    //      mem_0.ck_t
+		input  wire         ck_c_0,    //           .ck_c
+		input  wire         cke_0,     //           .cke
+		input  wire [7:0]   c_0,       //           .c
+		input  wire [5:0]   r_0,       //           .r
+		inout  wire [127:0] dq_0,      //           .dq
+		inout  wire [15:0]  dm_0,      //           .dm
+		inout  wire [15:0]  dbi_0,     //           .dbi
+		inout  wire [3:0]   par_0,     //           .par
+		inout  wire [3:0]   derr_0,    //           .derr
+		output wire [3:0]   rdqs_t_0,  //           .rdqs_t
+		output wire [3:0]   rdqs_c_0,  //           .rdqs_c
+		input  wire [3:0]   wdqs_t_0,  //           .wdqs_t
+		input  wire [3:0]   wdqs_c_0,  //           .wdqs_c
+		inout  wire [7:0]   rd_0,      //           .rd
+		input  wire         rr_0,      //           .rr
+		input  wire         rc_0,      //           .rc
+		output wire         aerr_0,    //           .aerr
+		output wire         cattrip,   // m2u_bridge.cattrip
+		output wire [2:0]   temp,      //           .temp
+		output wire [7:0]   wso,       //           .wso
+		input  wire         reset_n,   //           .reset_n
+		input  wire         wrst_n,    //           .wrst_n
+		input  wire         wrck,      //           .wrck
+		input  wire         shiftwr,   //           .shiftwr
+		input  wire         capturewr, //           .capturewr
+		input  wire         updatewr,  //           .updatewr
+		input  wire         selectwir, //           .selectwir
+		input  wire         wsi        //           .wsi
+	);
+endmodule
+

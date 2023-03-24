@@ -1,0 +1,34 @@
+	component ed_sim_mem is
+		port (
+			ck_t_0    : in    std_logic                      := 'X';             -- ck_t
+			ck_c_0    : in    std_logic                      := 'X';             -- ck_c
+			cke_0     : in    std_logic                      := 'X';             -- cke
+			c_0       : in    std_logic_vector(7 downto 0)   := (others => 'X'); -- c
+			r_0       : in    std_logic_vector(5 downto 0)   := (others => 'X'); -- r
+			dq_0      : inout std_logic_vector(127 downto 0) := (others => 'X'); -- dq
+			dm_0      : inout std_logic_vector(15 downto 0)  := (others => 'X'); -- dm
+			dbi_0     : inout std_logic_vector(15 downto 0)  := (others => 'X'); -- dbi
+			par_0     : inout std_logic_vector(3 downto 0)   := (others => 'X'); -- par
+			derr_0    : inout std_logic_vector(3 downto 0)   := (others => 'X'); -- derr
+			rdqs_t_0  : out   std_logic_vector(3 downto 0);                      -- rdqs_t
+			rdqs_c_0  : out   std_logic_vector(3 downto 0);                      -- rdqs_c
+			wdqs_t_0  : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- wdqs_t
+			wdqs_c_0  : in    std_logic_vector(3 downto 0)   := (others => 'X'); -- wdqs_c
+			rd_0      : inout std_logic_vector(7 downto 0)   := (others => 'X'); -- rd
+			rr_0      : in    std_logic                      := 'X';             -- rr
+			rc_0      : in    std_logic                      := 'X';             -- rc
+			aerr_0    : out   std_logic;                                         -- aerr
+			cattrip   : out   std_logic;                                         -- cattrip
+			temp      : out   std_logic_vector(2 downto 0);                      -- temp
+			wso       : out   std_logic_vector(7 downto 0);                      -- wso
+			reset_n   : in    std_logic                      := 'X';             -- reset_n
+			wrst_n    : in    std_logic                      := 'X';             -- wrst_n
+			wrck      : in    std_logic                      := 'X';             -- wrck
+			shiftwr   : in    std_logic                      := 'X';             -- shiftwr
+			capturewr : in    std_logic                      := 'X';             -- capturewr
+			updatewr  : in    std_logic                      := 'X';             -- updatewr
+			selectwir : in    std_logic                      := 'X';             -- selectwir
+			wsi       : in    std_logic                      := 'X'              -- wsi
+		);
+	end component ed_sim_mem;
+

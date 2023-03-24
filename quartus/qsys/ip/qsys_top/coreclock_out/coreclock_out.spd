@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="sim/coreclock_out.v"
+   type="VERILOG"
+   library="coreclock_out"
+   hasInlineConfiguration="true" />
+ <topLevel name="coreclock_out.coreclock_out" />
+ <deviceFamily name="stratix10" />
+ <device name="1SM21CHU2F53E2VG" />
+</simPackage>
