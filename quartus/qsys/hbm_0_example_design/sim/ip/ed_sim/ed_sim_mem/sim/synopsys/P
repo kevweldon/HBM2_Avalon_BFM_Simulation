@@ -1,5 +1,9 @@
 115 path=HBM2_Avalon_BFM_Simulation/quartus/qsys/hbm_0_example_design/sim/ip/ed_sim/ed_sim_mem/sim/synopsys/vcsmx/
 16 uid=11645753
 27 mtime=1679656057.591188
+<<<<<<< HEAD
 27 atime=1679659140.500939
+=======
+27 atime=1679656057.569198
+>>>>>>> e6b2e171dd85af08ff5f184e3fe99cd3db6d5b2d
 27 ctime=1679656057.591188

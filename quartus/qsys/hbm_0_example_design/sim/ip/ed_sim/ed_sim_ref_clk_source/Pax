@@ -1,5 +1,9 @@
 138 path=HBM2_Avalon_BFM_Simulation/quartus/qsys/hbm_0_example_design/sim/ip/ed_sim/ed_sim_ref_clk_source/altera_avalon_clock_source_191/
 16 uid=11645753
 27 mtime=1679656054.519144
+<<<<<<< HEAD
 26 atime=1679659217.50992
+=======
+27 atime=1679656054.515216
+>>>>>>> e6b2e171dd85af08ff5f184e3fe99cd3db6d5b2d
 27 ctime=1679656054.519144
