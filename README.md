@@ -1,4 +1,4 @@
-Platform Designer example demonstrating Avalon communication from Avalon BFM to Stratix 10 HBM.
+Platform Designer example demonstrating Avalon communication from Avalon Bus Functional Model (BFM) to Stratix 10 HBM.
 
 First unzip both quartus.zip and sim.zip.
 
