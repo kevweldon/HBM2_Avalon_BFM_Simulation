@@ -1,5 +1,7 @@
 Platform Designer example demonstrating Avalon communication from Avalon BFM to Stratix 10 HBM.
 
+First unzip both qartus.zip and sim.zip.
+
 To run the simulation on Linux navigate to the ./simulation directory and execute the "runme" script.
 
 %> runme
