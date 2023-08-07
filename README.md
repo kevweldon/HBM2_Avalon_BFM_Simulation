@@ -1,6 +1,6 @@
-Platform Designer example demonstrating Avalon communication from Avalon Bus Functional Model (BFM) to Stratix 10 HBM.
+Platform Designer example demonstrating Avalon communication from Avalon BFM to Stratix 10 HBM.
 
-First unzip both quartus.zip and sim.zip.
+First unzip both quartus.zip and sim.zip
 
 To run the simulation on Linux navigate to the ./simulation directory and execute the "runme" script.
 
